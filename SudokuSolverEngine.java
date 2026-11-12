@@ -23,8 +23,19 @@ public class SudokuSolverEngine {
       boolean solved = board.solve();
       long stop = System.currentTimeMillis();
       
-           
+      //use solve method to show the result
+      if(solved){
+         System.out.printf("SOLVED in %.3f seconds.\n",
+            ((stop-start)/1000.0));
+      } else{
+         System.out.println("No solution found.");
+        }
       }
+      System.out.println();
+      System.out.println(board);
+
+           
    }
 }
+
 
