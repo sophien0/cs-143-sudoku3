@@ -19,6 +19,12 @@ public class SudokuSolverEngine {
     
       long start = System.currentTimeMillis();
       
+      //declare a variable : solved
+      boolean solved = board.solve();
+      long stop = System.currentTimeMillis();
+      
+           
       }
-    }
+   }
 }
+
